@@ -26,4 +26,4 @@ php spark serve
 ```
 
 Para executar a API usar a coleção no Insomnia
-- importar o arquivo [API_cadastro_clientes.yaml]()
+- importar o arquivo [API_cadastro_clientes.yaml](https://github.com/jonatas-rezende/cadastro_clientes/blob/main/API_cadastro_clientes.yaml)
