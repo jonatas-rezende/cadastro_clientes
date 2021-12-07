@@ -1,0 +1,279 @@
+_type: export
+__export_format: 4
+__export_date: 2021-12-07T05:27:02.633Z
+__export_source: insomnia.desktop.app:v2021.6.0
+resources:
+  - _id: req_83a4117ea1184815b73dd65f9f5bdd8d
+    parentId: fld_ccce3ccc11f44c34860ae8e75369b89f
+    modified: 1638854689124
+    created: 1638850004678
+    url: http://localhost:8080/usuario/login
+    name: login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - id: pair_26d663c9f2a44a978da880468f80d403
+          name: login
+          value: admin
+          description: ""
+        - id: pair_f3f1d9edf6294ebcb19e227f8c1917ba
+          name: senha
+          value: admin
+          description: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+    authentication: {}
+    metaSortKey: -1638850004678
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_ccce3ccc11f44c34860ae8e75369b89f
+    parentId: wrk_06f966995f66436581bee34553b3e838
+    modified: 1638504074751
+    created: 1638499566361
+    name: Usuários
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1638499566361
+    _type: request_group
+  - _id: wrk_06f966995f66436581bee34553b3e838
+    parentId: null
+    modified: 1638499556726
+    created: 1638499556726
+    name: Cadastro_clientes
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_f9002ddd065f4ef0a4bcfa9bee14285e
+    parentId: fld_ccce3ccc11f44c34860ae8e75369b89f
+    modified: 1638854615067
+    created: 1638854514059
+    url: http://localhost:8080/usuario/logout
+    name: logout
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638850004628
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7880fa0a208748a0b35e796f2ab25e6b
+    parentId: fld_f3dd1c76c0d84a10be250d7dc6bd58ec
+    modified: 1638854714172
+    created: 1638504588063
+    url: http://localhost:8080/cliente/create
+    name: create - criar cliente
+    description: ""
+    method: POST
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - id: pair_9fbe7639cc7a45b58470ddcf4d167102
+          name: nome
+          value: ""
+          description: ""
+        - id: pair_b6cbd06516364af281568bd609db6e96
+          name: cidade
+          value: ""
+          description: ""
+        - id: pair_e30711581d9a4fddaa57f5288242c883
+          name: UF
+          value: ""
+          description: ""
+        - id: pair_3e65d3bea7be4bafb5e8275dfa8e4013
+          name: email
+          value: ""
+          description: ""
+        - id: pair_fad16e1da0b443e28f5b8c7cbd29435a
+          name: telefone
+          value: ""
+          description: ""
+        - id: pair_405cc65b34624e2f959a2051437a7878
+          name: whatsapp
+          value: ""
+          description: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+    authentication: {}
+    metaSortKey: -1638504588100.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_f3dd1c76c0d84a10be250d7dc6bd58ec
+    parentId: wrk_06f966995f66436581bee34553b3e838
+    modified: 1638504573370
+    created: 1638504573370
+    name: Clientes
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1638504573370
+    _type: request_group
+  - _id: req_64efefb8e82740df976fdedbc908a97e
+    parentId: fld_f3dd1c76c0d84a10be250d7dc6bd58ec
+    modified: 1638854728254
+    created: 1638505980546
+    url: http://localhost:8080/clientes
+    name: index - listar clientes
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638504588113
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_218b55d02da544aea4d4ce6e86e009ff
+    parentId: fld_f3dd1c76c0d84a10be250d7dc6bd58ec
+    modified: 1638854744382
+    created: 1638510293000
+    url: http://localhost:8080/cliente/edit/5
+    name: update - editar cliente
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome": "",
+        	"cidade": "",
+        	"UF": "",
+        	"email": "",
+        	"telefone": "",
+        	"whatsapp": ""
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1638504588013
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_aa39cf9104c84c4bb90b33301a537eed
+    parentId: fld_f3dd1c76c0d84a10be250d7dc6bd58ec
+    modified: 1638854721644
+    created: 1638511833665
+    url: http://localhost:8080/cliente/5
+    name: show - mostrar cliente
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638504588088
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b0fc8a6ebef54289a0d53aad37eb10ea
+    parentId: fld_f3dd1c76c0d84a10be250d7dc6bd58ec
+    modified: 1638849579859
+    created: 1638512004343
+    url: http://localhost:8080/cliente/delete/5
+    name: delete - apagar cliente
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638502085010
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_0592f098c9639e52433b875c1171b02d9c185d91
+    parentId: wrk_06f966995f66436581bee34553b3e838
+    modified: 1638499556733
+    created: 1638499556733
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1638499556733
+    _type: environment
+  - _id: jar_0592f098c9639e52433b875c1171b02d9c185d91
+    parentId: wrk_06f966995f66436581bee34553b3e838
+    modified: 1638854677475
+    created: 1638499556754
+    name: Default Jar
+    cookies:
+      - key: PHPSESSID
+        value: bb3imesfao3ku6arga3g7pbo1u
+        domain: localhost
+        path: /
+        hostOnly: true
+        creation: 2021-12-03T02:46:41.195Z
+        lastAccessed: 2021-12-03T02:46:41.195Z
+        id: "11174119384062098"
+      - key: ci_session
+        value: ar2kd5agb3g25otjjqa1f1pm2j3aubqt
+        expires: 2021-12-07T07:24:37.000Z
+        maxAge: 7200
+        domain: localhost
+        path: /
+        httpOnly: true
+        extensions:
+          - SameSite=Lax
+        hostOnly: true
+        creation: 2021-12-07T04:26:15.921Z
+        lastAccessed: 2021-12-07T05:24:37.475Z
+        id: "5690165676570638"
+    _type: cookie_jar
+  - _id: spc_4b4fec5c03e54444904d90426b16324e
+    parentId: wrk_06f966995f66436581bee34553b3e838
+    modified: 1638499556728
+    created: 1638499556728
+    fileName: Cadastro_clientes
+    contents: ""
+    contentType: yaml
+    _type: api_spec
